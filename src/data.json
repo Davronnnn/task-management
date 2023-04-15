@@ -1,0 +1,74 @@
+{
+	"boards": [
+		{
+			"name": "Test1",
+			"isActive": false,
+			"columns": [
+				{
+					"name": "Todo",
+					"tasks": [
+						{
+							"title": "task 1",
+							"description": "",
+							"status": "Todo",
+							"file": {
+								"name": "file1",
+								"file": "asdasd"
+							},
+							"subtasks": [
+								{
+									"title": "Sign up page",
+									"isCompleted": true
+								},
+								{
+									"title": "Sign in page",
+									"isCompleted": false
+								},
+								{
+									"title": "Welcome page",
+									"isCompleted": false
+								}
+							]
+						}
+					]
+				},
+
+				{
+					"name": "Done",
+					"tasks": [
+						{
+							"title": "test title",
+							"description": "",
+							"status": "Done",
+							"file": {
+								"name": "file2",
+								"file": "asdasd"
+							},
+							"subtasks": []
+						},
+
+						{
+							"title": "task 2",
+							"description": "task 2 desciprtion",
+							"status": "Done",
+							"file": {
+								"name": "file3",
+								"file": "asdasd"
+							},
+							"subtasks": [
+								{
+									"title": "qweqwe",
+									"isCompleted": true
+								},
+								{
+									"title": "asdasd",
+									"isCompleted": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
