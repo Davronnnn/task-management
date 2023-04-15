@@ -19,14 +19,16 @@ function App() {
 
 	useEffect(() => {
 		getTasks().then((data) => {
-			dispatch(boardsSlice.actions.initialBoard(data.data));
+			
 			console.log(data.data);
+			const tasksArray = data.data.reduce((acc, obj) => {
+				return [...acc, ...obj.tasks];
+			}, []);
+			console.log(tasksArray);
+
+			dispatch(boardsSlice.actions.initialBoard(tasksArray));
 			setLoading(false);
 		});
-
-		// deleteTask(4).then((data) => {
-		// 	console.log(data);
-		// });
 	}, []);
 
 	if (loading) {

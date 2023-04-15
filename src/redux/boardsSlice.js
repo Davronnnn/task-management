@@ -10,7 +10,7 @@ const boardsSlice = createSlice({
 
 			const board = state.find((board) => board.isActive);
 
-			board.columns = payload;
+			board.columns[0].tasks = payload;
 		},
 		editBoard: (state, action) => {
 			const payload = action.payload;
